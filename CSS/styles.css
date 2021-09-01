@@ -1,0 +1,92 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.container{
+    max-width: 100% !important;
+}
+
+p {
+  margin-bottom: 0px;
+}
+.restaurant-name p {
+  font-size: 12px;
+}
+.restaurant-name h2 {
+  margin-bottom: 4px;
+}
+
+.nav-links {
+  align-items: flex-end;
+  justify-content: center;
+}
+.nav-item{
+    margin: 0px 25px;
+}
+
+.nav-links .navbar-nav .nav-link{
+    color: darkred;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-items{
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;
+}
+.menu-item{
+    background-color: rgb(222, 226, 226);
+    border: 2px solid rgb(90, 68, 68);
+    border-radius: 8px;
+   
+}
+
+.menu-item p{
+    text-align: justify;
+}
+
+/* ************Screen Size < 992px ******************* */
+@media only screen and (min-width: 992px) {
+   .menu-item{
+       width: 31%;
+   }
+  }
+  
+@media only screen and (max-width: 992px) and (min-width:554px) {
+  .nav-links {
+    background-color: #e8e8e8;
+  }
+
+  .menu-item{
+      width: 48%;
+  }
+  .menu-item:nth-child(3){
+      width: 98%;
+  }
+}
+
+
+
+/* ****************** Screen Size : 768px******************* */
+@media screen and (min-width:768px){
+    .navbar-toggler{
+        
+    }
+    .nav-links .navbar-nav{
+        /* display: block; */
+        justify-content: center;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:450px){
+    .rest-img{
+        display: none;
+        margin: 0 !important;
+    }
+    
+}
